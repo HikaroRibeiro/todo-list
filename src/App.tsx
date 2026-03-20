@@ -8,6 +8,7 @@ import SpinnerIcon from "./assets/icons/spinner.svg?react"
 import XIcon from "./assets/icons/x.svg?react"
 import Badge from "./components/badge"
 import Button from "./components/button"
+import ButtonIcon from "./components/button-icon"
 
 function App() {
   
@@ -38,6 +39,12 @@ function App() {
         <Button icon={PlusIcon} disabled> Nova Tarefa
 
         </Button>
+      </div>
+
+      <div className="flex gap-1">
+        <ButtonIcon icon={TrashIcon} variant="primary" />
+        <ButtonIcon icon={TrashIcon} variant="secondary" />
+        <ButtonIcon icon={TrashIcon} variant="tertiary" />
       </div>
     </div>
 
