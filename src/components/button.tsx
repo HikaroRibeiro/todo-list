@@ -55,6 +55,7 @@ export const buttonTextVariants = cva("", {
 // "Omit" -> pegar todas as propriedades do botão e remova o "size" e o "disable"
 interface ButtonProps extends Omit<React.ComponentProps<"button">, "size" | "disabled">, VariantProps<typeof buttonVariants>{
     icon?: React.ComponentProps<typeof Icon>["svg"]
+    loading?: boolean
 }
 
 export default function Button({
@@ -66,6 +67,7 @@ export default function Button({
     icon: IconComponent,
     ...props
 }:ButtonProps){
+
     return (
         <button className={buttonVariants({variant, size, disabled, className})} {...props}>
             {IconComponent && <Icon 
