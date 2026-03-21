@@ -9,6 +9,8 @@ import XIcon from "./assets/icons/x.svg?react"
 import Badge from "./components/badge"
 import Button from "./components/button"
 import ButtonIcon from "./components/button-icon"
+import InputCheckbox from "./components/input-checkbox"
+import InputText from "./components/input-text"
 
 function App() {
   
@@ -45,6 +47,14 @@ function App() {
         <ButtonIcon icon={TrashIcon} variant="primary" />
         <ButtonIcon icon={TrashIcon} variant="secondary" />
         <ButtonIcon icon={TrashIcon} variant="tertiary" />
+      </div>
+
+      <div>
+        <InputText />
+      </div>
+
+      <div>
+        <InputCheckbox />
       </div>
     </div>
 
