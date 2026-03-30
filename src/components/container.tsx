@@ -13,7 +13,7 @@ export const containerVariants = cva("mx-auto", {
     }
 })
 
-interface ContinerProps extends VariantProps<typeof containerVariants>,React.ComponentProps<"div"> {
+interface ContainerProps extends VariantProps<typeof containerVariants>,React.ComponentProps<"div"> {
     as?: keyof React.JSX.IntrinsicElements
 }
 
@@ -22,7 +22,7 @@ export default function Container({
     children,
     className,
     ...props
-}: ContinerProps) {
+}: ContainerProps) {
     return React.createElement(
         as,
         {
